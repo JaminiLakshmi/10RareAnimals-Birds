@@ -1,0 +1,86 @@
+ <!--birds-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="welcome">
+        <title>birds</title>
+    </head>
+    <body background="https://cdn.pixabay.com/photo/2013/08/05/06/19/butterfly-169924_1280.jpg" height="100px" width="100%">
+        
+    <td>
+        <center>
+            <p style="background-color: aqua; margin:3px;padding-bottom: 8px;padding-top: 8px; border:5px solid rgb(234, 53, 219)">
+                <font size="5">
+        <label for="input-id1"><font color="red"><b>10 Rare Birds:</b></font></label>
+        <input list="datalist-id1" id="input-id1" placeholder="Select">
+                </font>
+        <datalist id="datalist-id1">
+           <option value="Kakapo"></option>
+           <option value="Philippine Eagle"></option>
+           <option value="Bermuda Petrel"></option>
+           <option value="Spoon-billed Sandpiper"></option>
+           <option value="Night Parrot"></option>
+           <option value="Blue-throated Macaw"></option>
+           <option value="California Condor "></option>
+           <option value="Forest Owlet "></option>
+           <option value="Spix's Macaw"></option>
+           <option value="Himalayan Quail"></option>
+        </datalist>
+        <button onclick="myfunc1()">submit</button>
+        <button onclick="resetfunc1()">reset</button>
+        </center>
+            </p>
+    </td>
+            
+        <script>
+           function myfunc1()
+           {
+               var selected_opt1=document.getElementById("input-id1").value;
+               if(selected_opt1==="Kakapo")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/K%C4%81k%C4%81p%C5%8D";
+               }
+               else if(selected_opt1==="Philippine Eagle")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Philippine_eagle";
+               }
+               else if(selected_opt1==="Bermuda Petrel")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Bermuda_petrel";
+               }
+               else if(selected_opt1==="Spoon-billed Sandpiper")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Spoon-billed_sandpiper";
+               }
+               else if(selected_opt1==="Night Parrot")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Night_parrot";
+               }
+               else if(selected_opt1==="Blue-throated Macaw")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Blue-throated_macaw";
+               }
+               else if(selected_opt1==="California Condor ")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/California_condor";
+               }
+               else if(selected_opt1==="Forest Owlet ")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Forest_owlet";
+               }
+               else if(selected_opt1==="Spix's Macaw")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Spix%27s_macaw";
+               }
+               else if(selected_opt1==="Himalayan Quail")
+               {
+                   window.location.href="https://en.wikipedia.org/wiki/Himalayan_quail";
+               }
+           }
+           function resetfunc1()
+           {
+              document.getElementById("input-id1").value = "";
+           }
+        </script>
+    </body>
+</html>

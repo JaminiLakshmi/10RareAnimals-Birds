@@ -1,0 +1,86 @@
+<!--Animals-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="welcome">
+        <title>Animals</title>
+    </head>
+    <body background="https://cdn.pixabay.com/photo/2015/02/20/16/59/deer-643340_1280.jpg" height="100px" width="100%">
+            <td>
+                <center>
+                     <p style="background-color: rgb(30, 255, 0); margin:3px;height: auto;width: auto;padding-bottom: 8px;padding-top: 8px; border:5px solid rgb(196, 26, 26)">
+                        <font size="5">
+                <label for="input-id"><font color="black"><b>10 Rare Animals:</b></font></label>
+                <input list="datalist-id" id="input-id" placeholder="Select">
+                        </font>
+                <datalist id="datalist-id">
+                    <option value="Amur Leopard"></option>
+                    <option value="Javan Rhinoceros"></option>
+                    <option value="Sumatran Orangutan"></option>
+                    <option value="Pangolin"></option>
+                    <option value="Mountain Gorilla"></option>
+                    <option value="Cross River Gorilla"></option>
+                    <option value="Chinese Giant Salamander"></option>
+                    <option value="South China Tiger"></option>
+                    <option value="Sumatran Tiger"></option>
+                    <option value="Florida Panther"></option>
+                </datalist>
+                <button onclick="myfunc()">submit</button>
+                <button onclick="resetfunc()">reset</button>
+               </center>
+                    </p>
+            </td>
+                <script>
+                    function myfunc()
+                    {
+                        var selected_opt=document.getElementById("input-id").value;
+                        if(selected_opt==="Amur Leopard")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Amur_leopard";
+                        }
+                        else if(selected_opt==="Javan Rhinoceros")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Javan_rhinoceros";
+                        }
+                        else if(selected_opt==="Sumatran Orangutan")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Sumatran_orangutan";
+                        }
+                        else if(selected_opt==="Pangolin")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Pangolin";
+                        }
+                        else if(selected_opt==="Mountain Gorilla")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Mountain_gorilla";
+                        }
+                        else if(selected_opt==="Cross River Gorilla")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Cross_River_gorilla";
+                        }
+                        else if(selected_opt==="Chinese Giant Salamander")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Chinese_giant_salamander";
+                        }
+                        else if(selected_opt==="South China Tiger")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/South_China_tiger";
+                        }
+                        else if(selected_opt==="Sumatran Tiger")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Sumatran_tiger";
+                        }
+                        else if(selected_opt==="Florida Panther")
+                        {
+                            window.location.href="https://en.wikipedia.org/wiki/Florida_panther";
+                        }
+                    }
+                    function resetfunc()
+                    {
+                       document.getElementById("input-id").value = "";
+                    }
+                </script>
+                </table>
+        </body>
+    </head>
+</html>
